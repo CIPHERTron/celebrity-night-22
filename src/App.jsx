@@ -3,6 +3,7 @@ import { ChakraProvider, Box, Stack } from '@chakra-ui/react';
 
 import HeroSection from './components/hero/HeroSection';
 import useMediaQuery from './hooks/useMediaQuery';
+import MobileView from './components/mobile/MobileView';
 
 import customTheme from './config/theme';
 import Fonts from './global';
@@ -15,7 +16,7 @@ function App() {
       <Fonts />
       <Stack>
         <Box textAlign="center" fontSize="xl">
-          {isMobileView ? <h1>Hello</h1> : <HeroSection />}
+          {isMobileView ? <MobileView /> : <HeroSection />}
         </Box>
       </Stack>
     </ChakraProvider>
