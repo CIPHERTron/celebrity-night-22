@@ -1,7 +1,7 @@
 const styles = {
   global: (props) => ({
     body: {
-      backgroundColor: props.colorMode === 'light' ? 'red.50' : '#181818'
+      backgroundColor: props.colorMode === 'light' ? '#181818' : '#181818'
     },
     /**
      * custom scrollbar
