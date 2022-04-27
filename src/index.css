@@ -1,0 +1,32 @@
+@font-face {
+ font-family: "Signifier";
+ src: local("Signifier"), url('./fonts/signifier-medium-italic.woff2') format('woff2');
+}
+@font-face {
+ font-family: "Soehne Breit Regular";
+ src: local("Soehne Breit Regular"), url('./fonts/soehne-breit-dreiviertelfett.woff2') format('woff2');
+}
+@font-face {
+ font-family: "Soehne Breit Bold";
+ src: local("Soehne Breit Bold"), url('./fonts/soehne-breit-halbfett.woff2') format('woff2');
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ color: #181818;
+}
+
+h2 {
+ font-family: "Signifier" !important;
+}
+
+p {
+ font-family: "Soehne Breit Bold" !important;
+}
+
+h3 {
+ font-family: "Soehne Breit Regular" !important;
+ font-weight: bolder;
+}

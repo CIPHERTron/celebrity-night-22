@@ -1,9 +1,11 @@
 import { extendTheme } from '@chakra-ui/react';
 import styles from './styles';
-import fonts from './fonts';
 
 const customTheme = extendTheme({
-  fonts,
+  fonts: {
+    heading: 'Signifier, sans-serif',
+    body: 'Soehne Breit Regular, sans-serif'
+  },
   styles
 });
 
