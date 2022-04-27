@@ -26,7 +26,6 @@ const HeadingWrapper = styled(Box)`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
   margin-top: 48px;
 `;
 
