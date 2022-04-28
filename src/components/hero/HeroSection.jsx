@@ -3,7 +3,7 @@ import { Box, Image } from '@chakra-ui/react';
 import styled from '@emotion/styled';
 
 import headingSvg from '../../assets/heading.svg';
-import jubinSvg from '../../assets/jubin.svg';
+import jubinPng from '../../assets/jubin.png';
 import hollow from '../../assets/hollow.png';
 import solid from '../../assets/solid.png';
 import line from '../../assets/line.png';
@@ -182,7 +182,7 @@ function HeroSection() {
         </DescWrapper>
       </Wrapper>
       <JubinPoster>
-        <Image src={jubinSvg} alt="Jubin's Poster" />
+        <Image src={jubinPng} alt="Jubin's Poster" />
       </JubinPoster>
     </Container>
   );
