@@ -11,6 +11,11 @@ const Container = styled.div`
   border: 20px solid #181818;
   border-top: none;
 
+  a {
+    text-decoration: none;
+    color: #181818;
+  }
+
   @media (max-width: 700px) {
     height: 80px;
     border: 10px solid #181818;
@@ -22,7 +27,9 @@ function Footer() {
   return (
     <Container>
       <h2>© Celebrity Night&apos;22</h2>
-      <h2>Instagram</h2>
+      <a rel="noreferrer" target="_blank" href="https://www.instagram.com/fms.nitr/">
+        <h2>Instagram</h2>
+      </a>
     </Container>
   );
 }
