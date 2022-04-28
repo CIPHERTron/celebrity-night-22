@@ -8,6 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 3%;
+  padding-bottom: 3%;
 
   @media (max-width: 700px) {
     border: 5px solid #181818;
