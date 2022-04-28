@@ -38,9 +38,9 @@ const JubinWrapper = styled(Box)`
     position: absolute;
     height: 60px;
     width: 60px;
-    left: 13%;
+    left: 18%;
     right: 0%;
-    top: 46%;
+    top: 30%;
     bottom: 0%;
   }
 `;
