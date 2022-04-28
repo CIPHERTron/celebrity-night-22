@@ -6,6 +6,7 @@ import useMediaQuery from './hooks/useMediaQuery';
 import MobileView from './components/mobile/MobileView';
 
 import Seating from './components/Seating';
+import Footer from './components/Footer';
 
 import customTheme from './config/theme';
 import Fonts from './global';
@@ -21,6 +22,7 @@ function App() {
           {isMobileView ? <MobileView /> : <HeroSection />}
         </Box>
         <Seating />
+        <Footer />
       </Stack>
     </ChakraProvider>
   );
