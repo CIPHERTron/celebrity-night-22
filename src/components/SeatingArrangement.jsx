@@ -3,14 +3,15 @@ import styled from '@emotion/styled';
 
 const Wrapper = styled.div`
   border: 20px solid #181818;
-  border-top: 0;
-  border-bottom: 0;
+  border-top: none;
+  border-bottom: none;
   background-color: #434e42;
   display: flex;
   justify-content: center;
 
   @media (max-width: 700px) {
     border: 5px solid #181818;
+    border-bottom: none;
   }
 `;
 
