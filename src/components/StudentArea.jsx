@@ -63,6 +63,11 @@ const StudentsSection = styled.div`
     justify-content: center;
   }
 
+  .light > p {
+    transform: rotate(-30deg);
+    text-align: center;
+  }
+
   ${
     '' /* .light > p {
     text-align: justify;
@@ -73,13 +78,14 @@ const StudentsSection = styled.div`
 
   .faculties,
   .non-staffs {
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .non-staffs {
+    width: 100%;
     background: #7ba84d;
   }
 `;
