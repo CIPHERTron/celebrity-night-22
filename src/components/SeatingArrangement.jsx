@@ -19,6 +19,7 @@ const VIP = styled.div`
   background-color: #b56554;
   border: 5px solid #181818;
   height: fit-content;
+  border-top: none;
 
   .stage {
     width: 80%;
@@ -28,6 +29,7 @@ const VIP = styled.div`
     margin: 0 auto;
     border: 5px solid #181818;
     margin-bottom: 5%;
+    border-top: none;
   }
   .stage > p {
     text-align: center;
