@@ -56,16 +56,26 @@ const StudentsSection = styled.div`
   .light {
     font-size: 14px;
     height: 100%;
+    width: 100%;
     background: #ddd6cb;
     border: 2px solid #181818;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
   .light > p {
-    transform: rotate(-30deg);
+    transform: rotate(-90deg);
     text-align: center;
+    margin-top: -10px;
+  }
+
+  @media (max-width: 700px) {
+    .light > p {
+      font-size: 12px;
+      margin-top: -10px;
+    }
   }
 
   ${
@@ -100,7 +110,19 @@ function StudentArea() {
             <p>Faculties and Officers</p>
           </div>
           <div className="light">
-            <p>Light and Sound</p>
+            <p>d</p>
+            <p>n</p>
+            <p>u</p>
+            <p>o</p>
+            <p style={{ marginBottom: '10px' }}>S</p>
+            <p>d</p>
+            <p>n</p>
+            <p style={{ marginBottom: '10px' }}>A</p>
+            <p>t</p>
+            <p>h</p>
+            <p>g</p>
+            <p>i</p>
+            <p>L</p>
           </div>
           <div className="non-staffs">
             <p>Non-Teaching Staffs</p>
