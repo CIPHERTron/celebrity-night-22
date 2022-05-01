@@ -8,7 +8,7 @@ import dtm from '../../assets/dtmobile.png';
 // import hollow from '../../assets/hollow.png';
 // import solid from '../../assets/solid.png';
 // import line from '../../assets/line.png';
-import pattern2 from '../../assets/pattern2.png';
+// import pattern2 from '../../assets/pattern2.png';
 // import pattern3 from '../../assets/pattern3.png';
 import pattern4 from '../../assets/pattern4.png';
 // import star2 from '../../assets/star2.png';
@@ -76,7 +76,7 @@ function HeroSection() {
 
       <JubinWrapper>
         <Image src={jubinSvg} alt="Heading SVG" />
-        <Image className="pattern-2" src={pattern2} alt="Flower Pattern" />
+        {/* <Image className="pattern-2" src={pattern2} alt="Flower Pattern" /> */}
       </JubinWrapper>
 
       <DateWrapper>
