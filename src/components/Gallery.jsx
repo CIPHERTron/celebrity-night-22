@@ -5,6 +5,15 @@ import styled from '@emotion/styled';
 
 // import sample from '../assets/jubin.png';
 
+import sn from '../assets/cn/sn.jpeg';
+import two from '../assets/cn/two.jpg';
+// import three from '../assets/cn/three.jpg';
+// import four from '../assets/cn/four.jpg';
+import head from '../assets/head.png';
+import salim from '../assets/cn/salim.jpeg';
+import sc from '../assets/cn/sc.jpeg';
+import sc1 from '../assets/cn/sc1.jpeg';
+
 const Container = styled.div`
   margin: 3% auto;
   border: 20px solid #181818;
@@ -58,7 +67,8 @@ const Container = styled.div`
   .dp-1,
   .dp-2,
   .dp-3,
-  .dp-4 {
+  .dp-4,
+  .dp-5 {
     height: 150px;
     margin: 0 auto;
     width: 100%;
@@ -71,6 +81,10 @@ const Container = styled.div`
     }
   }
 
+  .dp-1 {
+    filter: grayscale(100%);
+  }
+
   .dp-1,
   .dp-4 {
     border-radius: 80px 0px;
@@ -78,6 +92,13 @@ const Container = styled.div`
   .dp-2,
   .dp-3 {
     border-radius: 0px 80px;
+  }
+
+  .dp-5 {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 0px 100px 0px;
   }
 
   .null-3 {
@@ -92,12 +113,17 @@ const Container = styled.div`
     background: #e5693f;
     margin-top: 5%;
   }
+
+  .heading-1 {
+    height: 400px;
+    position: relative;
+    top: 30%;
+    left: 10%;
+  }
 `;
 
 function Gallery() {
-  const [picture, setPicture] = useState(
-    'https://cdn.siasat.com/wp-content/uploads/2021/09/jubin-nautiyals.webp'
-  );
+  const [picture, setPicture] = useState(sc1);
 
   const handleClick = (item) => setPicture(item);
 
@@ -107,54 +133,32 @@ function Gallery() {
         <h2>Gallery</h2>
       </div>
       <div className="gallery">
-        <div className="null-1" />
+        <div className="null-1">
+          <img className="heading-1" src={head} alt="Sample Heading" />
+        </div>
         <div className="null-2">
-          <img className="dp" src={picture} alt="Sample Gallery" />
+          <img
+            className="dp"
+            style={{ filter: 'grayscale(100%' }}
+            src={picture}
+            alt="Sample Gallery"
+          />
         </div>
         <div className="null-3">
           <div className="four-grid">
-            <img
-              className="dp-1"
-              src="https://i.pinimg.com/564x/33/50/de/3350de94be35769724bf09bcfbbd630d.jpg"
-              alt="Sample Gallery"
-              onClick={() =>
-                handleClick(
-                  'https://i.pinimg.com/564x/33/50/de/3350de94be35769724bf09bcfbbd630d.jpg'
-                )
-              }
-            />
-            <img
-              className="dp-2"
-              src="https://i.pinimg.com/564x/33/50/de/3350de94be35769724bf09bcfbbd630d.jpg"
-              alt="Sample Gallery"
-              onClick={() =>
-                handleClick(
-                  'https://i.pinimg.com/564x/33/50/de/3350de94be35769724bf09bcfbbd630d.jpg'
-                )
-              }
-            />
-            <img
-              className="dp-3"
-              src="https://i.pinimg.com/564x/33/50/de/3350de94be35769724bf09bcfbbd630d.jpg"
-              alt="Sample Gallery"
-              onClick={() =>
-                handleClick(
-                  'https://i.pinimg.com/564x/33/50/de/3350de94be35769724bf09bcfbbd630d.jpg'
-                )
-              }
-            />
+            <img className="dp-1" src={sn} alt="Sample Gallery" onClick={() => handleClick(sn)} />
+            <img className="dp-2" src={two} alt="Sample Gallery" onClick={() => handleClick(two)} />
+            <img className="dp-3" src={sc} alt="Sample Gallery" onClick={() => handleClick(sc)} />
             <img
               className="dp-4"
-              src="https://i.pinimg.com/564x/33/50/de/3350de94be35769724bf09bcfbbd630d.jpg"
+              src={salim}
               alt="Sample Gallery"
-              onClick={() =>
-                handleClick(
-                  'https://i.pinimg.com/564x/33/50/de/3350de94be35769724bf09bcfbbd630d.jpg'
-                )
-              }
+              onClick={() => handleClick(salim)}
             />
           </div>
-          <div className="null-4" />
+          <div className="null-4">
+            <img className="dp-5" src={sc1} alt="Sample Gallery" onClick={() => handleClick(sc1)} />
+          </div>
         </div>
       </div>
     </Container>
