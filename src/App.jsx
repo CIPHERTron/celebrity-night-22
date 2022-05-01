@@ -5,6 +5,7 @@ import HeroSection from './components/hero/HeroSection';
 import useMediaQuery from './hooks/useMediaQuery';
 import MobileView from './components/mobile/MobileView';
 import Gallery from './components/Gallery';
+import MobileGallery from './components/MobileGallery';
 
 import Seating from './components/Seating';
 import Footer from './components/Footer';
@@ -23,7 +24,7 @@ function App() {
           {isMobileView ? <MobileView /> : <HeroSection />}
         </Box>
         <Seating />
-        <Gallery />
+        {isMobileView ? <MobileGallery /> : <Gallery />}
         <Footer />
       </Stack>
     </ChakraProvider>
