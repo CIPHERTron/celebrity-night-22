@@ -24,7 +24,7 @@ const Container = styled.div`
     background: #7a6e5e;
     font-size: 40px;
     text-align: center;
-    line-height: 130px;
+    line-height: 140px;
   }
 
   .gallery {
